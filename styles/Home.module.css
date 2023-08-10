@@ -113,16 +113,27 @@
   font-size: 2rem;
   width: 30px;
   text-align: center;
+}
 
-  @media(max-width: 800px){
+@media(max-width: 800px){
+  .times > span,
+  .times_bottom > span{
     font-size: 14px;
     width: 28px;
   }
-  @media(max-width: 600px){
+}
+
+@media(max-width: 600px){
+  .times > span,
+  .times_bottom > span{
     font-size: 12px;
     width: 24px;
   }
-  @media(max-width: 500px){
+}
+
+@media(max-width: 500px){
+  .times > span,
+  .times_bottom > span{
     font-size: 10px;
     width: 20px;
   }
