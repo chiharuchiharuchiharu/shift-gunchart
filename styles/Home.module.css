@@ -1,7 +1,16 @@
+.main{
+  min-height: calc(100vh - 20px);
+  padding-bottom: 100px;
+  position: relative;
+}
+
 .header{
   background-color: var(--primary);
   width: 100vw;
   height: 80px;
+  text-align: center;
+  line-height: 80px;
+  font-size: 2rem;
 }
 
 .ctrl_container{
@@ -81,9 +90,36 @@
   background-color: var(--primary);
   height: 20px;
   color: var(--background);
+  position: adsolute;
+  bottom:0;
 }
 
 .copylight{
   text-align: center;
   line-height: 20px;
 }
+
+.times,
+.times_bottom{
+  margin-left: 82.5px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.times > span,
+.times_bottom > span{
+  font-size: 2rem;
+  width: 30px;
+  text-align: center;
+  @media(width < 600px){
+    font-size: 1.5rem;
+  }
+  @media(width < 500px){
+    font-size: 1.2rem;
+  }
+}
+
+.times_bottom{
+  margin-top: -20px;
+}
+

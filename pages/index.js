@@ -105,8 +105,8 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={inter.className}>
-        <header className={styles.header}>ヘッダー</header>
+      <main className={`${inter.className} ${styles.main}`}>
+        <header className={styles.header}>夏活参加メンバー</header>
 
         <div className={styles.ctrl_container}>
           <div className={styles.last_week}>
@@ -122,13 +122,29 @@ export default function Home() {
           </div>
         </div>
         <div className={styles.gunchart_container}>
+          <div className={styles.times}>
+          <span>8</span>
+          <span>9</span>
+          <span>10</span>
+          <span>11</span>
+          <span>12</span>
+          <span>13</span>
+          <span>14</span>
+          <span>15</span>
+          <span>16</span>
+          <span>17</span>
+          <span>18</span>
+          <span>19</span>
+          <span>20</span>
+          <span>21</span>
+          </div>
           {Object.keys(shifts).map((key, i) => {
             return (
               <div className={styles.date_container} key={key}>
                 <div className={styles.date}>
                   <div>
-                    <div>{getDay(i)}</div>
                     <div>{key}</div>
+                    <div>{getDay(i)}</div>
                   </div>
                 </div>
                 <div className={styles.names}>
@@ -154,6 +170,22 @@ export default function Home() {
               </div>
             );
           })}
+          <div className={styles.times_bottom}>
+          <span>8</span>
+          <span>9</span>
+          <span>10</span>
+          <span>11</span>
+          <span>12</span>
+          <span>13</span>
+          <span>14</span>
+          <span>15</span>
+          <span>16</span>
+          <span>17</span>
+          <span>18</span>
+          <span>19</span>
+          <span>20</span>
+          <span>21</span>
+          </div>
         </div>
       </main>
 
