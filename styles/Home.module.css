@@ -10,7 +10,9 @@
   height: 80px;
   text-align: center;
   line-height: 80px;
-  font-size: 2rem;
+  font-weight: bolder;
+  font-size: 3rem;
+  color: white;
 }
 
 .ctrl_container{
