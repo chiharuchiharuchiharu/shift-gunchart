@@ -35,7 +35,7 @@ export default function Home() {
     const yyyy = nextMonday.getFullYear();
     const mm = ("0" + (nextMonday.getMonth() + 1)).slice(-2);
     const dd = ("0" + nextMonday.getDate()).slice(-2);
-    setSelectDay(`${yyyy}-${mm}-${dd}`);
+    setSelectDay("2023-08-28");
   }
   function getSundays(day) {
     const today = new Date(day);
